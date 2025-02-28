@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(252, 252, 252);
+}
+header {
+  background-image: url(zomato.header.png.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 450px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  height: 70px;
+}
+
+nav .app_link a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+nav .nav_items ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: #fff;
+}
+
+nav .nav_items ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.content_wrapper {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.content_wrapper img {
+  width: 300px;
+  height: 60px;
+}
+
+.content_wrapper h1 {
+  font-size: 2.2rem;
+  font-weight: 100;
+  margin: 30px 0;
+  letter-spacing: 2px;
+}
+
+.content_wrapper h1 span {
+  font-weight: 600;
+}
+.search_container {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  width: 55%;
+  height: 3.4rem;
+  border-radius: 8px;
+}
+.search_container .left_search,
+.search_container .right_search {
+  display: inline-flex;
+  padding: 0 1rem;
+}
+
+.search_container .left_search {
+  width: 30%;
+  border-right: 2px solid grey;
+}
+
+.search_container .right_search {
+  width: 70%;
+}
+
+.search_container input {
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  background: transparent;
+  color: grey;
+  width: 100%;
+  margin-left: 6px;
+}
+
+.search_container .left_search i {
+  color: rgb(196, 84, 84);
+  font-size: 20px;
+}
+
+.search_container .right_search i {
+  color: rgb(124, 116, 116);
+  font-size: 20px;
+}
+/* ..........order section............ */
+
+.order-section {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.order-section .order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4%;
+  margin-bottom: 40px;
+}
+.order .card {
+  width: 30%;
+  margin: 12px;
+  border-radius: 8px;
+  border: 1px solid rgb(209, 207, 207);
+  transition: transform 0.7s;
+  position: relative;
+}
+.order .card a img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+.order .card:hover {
+  transform: scale(1.1);
+}
+.order .card .content {
+  text-align: left;
+  width: 100%;
+  padding: 0 12px;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  border-radius: 8px;
+}
+.order .card .content .heading {
+  font-size: 1rem;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.order .card .content .text {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.menu-icon {
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+/* ...................collection section................ */
+
+.collections {
+  width: 85%;
+  margin: 90px auto;
+  text-align: center;
+}
+
+.collections h1 {
+  text-align: left;
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.collections p {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+.collection-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.collection-cards .cards {
+  width: 260px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  margin: 12px 0;
+}
+
+.collection-cards .cards img {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(from bottom, #000, #ccc);
+}
+
+.collection-cards .cards .content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.collection-cards .cards .content p {
+  color: #fff;
+
+  font-size: 1.1rem;
+  margin: 5px 9px;
+}
+
+/* ..........popular locations............ */
+
+.collections h1 span {
+  color: #6b6a6a;
+  font-weight: lighter;
+}
+
+.popular-location {
+  width: 100%;
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular-location .box {
+  width: 30%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin: 10px 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 7px;
+}
+
+.popular-location .box a {
+  text-decoration: none;
+  color: #6b6a6a;
+  font-weight: 0;
+}
+.popular-location .box p {
+  margin: 0;
+}
+
+.popular-location .box .city {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.popular-location .box .places {
+  font-size: 16px;
+  padding: 8px 0;
+}
+
+.popular-location .box i {
+  color: #3a3737;
+}
+.see {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* ..............app section.................. */
+
+.app-section {
+  width: 100%;
+  background: #fffbf7;
+  padding: 60px 0;
+}
+
+.app {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.app .app-img {
+  width: 30%;
+  padding-top: 50px;
+}
+
+.app .app-img img {
+  width: 100%;
+}
+.app .get-app {
+  width: 60%;
+  padding: 0 20px;
+}
+
+.app .get-app h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 25px;
+}
+.app .get-app p {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.app .get-app .email-phone input {
+  margin-bottom: 30px;
+}
+
+.app .get-app .email-phone input[type="radio"] {
+  accent-color: rgb(212, 69, 93);
+}
+
+.submit input {
+  width: 60%;
+  padding: 15px 8px;
+  border: 0;
+  outline: none;
+  border: 1px solid rgb(97, 94, 94);
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
+.submit button {
+  padding: 15px 8px;
+  background: rgb(218, 41, 71);
+  border: 0;
+  outline: none;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-left: 12px;
+}
+
+.app-store {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.app-store img {
+  width: 150px;
+}
+
+/* ............explore............. */
+
+.option {
+  background: #fff;
+  width: 100%;
+  border: 0;
+  outline: none;
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 22px 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  color: #c2bcbc;
+}
+
+.option button {
+  background: 0;
+  border: 0;
+  font-size: 1.1rem;
+}
+
+/* ................footer................. */
+
+.footer {
+  width: 100%;
+  background: #f8f8f8;
+}
+
+.footer .container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-top img {
+  width: 140px;
+}
+
+.footer-top .footer-btn button {
+  padding: 10px 30px;
+  border: 0;
+  outline: 0;
+  border: 1px solid #b1b0b0;
+  font-size: 16px;
+  margin: 0 6px;
+  border-radius: 8px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-links .coloum {
+  margin: 50px 12px;
+}
+.footer-links .coloum .col-links {
+  list-style: none;
+  margin-top: 16px;
+}
+.footer-links .coloum .col-links li {
+  margin: 10px 0;
+}
+.footer-links .coloum .col-links li a {
+  text-decoration: none;
+  color: #919090;
+  font-size: 15px;
+}
+.footer-links .coloum div {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.col-links a i {
+  padding: 6px;
+  color: #fff;
+  background: rgb(61, 63, 61);
+  border-radius: 50%;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.col-links li img {
+  width: 130px;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: left;
+  color: #6b6a6a;
+}
+/* ......................media query for small screen..................... */
+@media only screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav .app_link a,
+  nav .nav_items ul {
+    display: none;
+  }
+
+  .content_wrapper h1 {
+    font-size: 1.5rem;
+  }
+  .content_wrapper img {
+    width: 250px;
+  }
+
+  .collection-cards .cards {
+    width: 100px;
+    margin: 20px;
+  }
+  .popular-location .box {
+    width: 100%;
+  }
+  .app {
+    flex-direction: column;
+  }
+  .app .app-img,
+  .app .get-app {
+    width: 100%;
+  }
+  .app .submit input,
+  .app .submit button {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  .app-store {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .app-store img {
+    width: 100px;
+  }
+}
